@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: var(--black-color);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Variable Define  */
+:root {
+  --black-color: #000;
+  --white-color: #fff;
+  --gray-color: #999;
+  --primary-font: "Oswald", sans-serif;
+  --secondary-font: "Philosopher", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--secondary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/* Custom Scrollbar  */
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+/* custom CSS design  */
+/* h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: rgba(0, 0, 0, 0);
+} */
+
+/* h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  color: rgba(0, 0, 0, 0);
+  line-height: 3rem;
+} */
+
+/* h4 {
+  color: rgba(0, 0, 0, 0);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: rgba(0, 0, 0, 0);
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+} */
+
+/* p {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+} */
+
+/* Navbar style  */
+
+.header {
+  padding: 0 4.8rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  position: fixed;
+  background: #fff;
+  height: 10%;
+  top: 0;
+}
+.navigation-wrap {
+  /* position: fixed; */
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+  padding: 0 0.625rem;
+  transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--black-color);
+  letter-spacing: 1px;
+}
+
+/* change navbar styling on scroll  */
+
+.navigation-wrap.scroll-on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white-color);
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.9);
+  transition: all 0.15s ease-in-out 0s;
+}
+
+.navbar-brand .logo {
+  height: 4rem;
+  width: 60px;
+  margin-left: 92px;
+  vertical-align: middle;
+  border: 3px solid #fff;
+}
+
+.navbar-brand {
+  float: left;
+  height: 85px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* Navbar style End  */
+
+.top-banner {
+  width: 100%;
+  background-color: #014421;
+}
+
+h1,
+h2,
+h4 {
+  color: #fff;
+}
